@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/02573533c7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
 
@@ -15,26 +17,109 @@
 
 <body>
     <div class="basic-page">
+        <!------------------------------------ NAVBAR ---------------------------------->
 
-   
-    <navbar class="bg-secondary text-white navbar">
-        <div class="container">
-            <div class="row py-10 px-30">
-                <div class="col text-uppercase">usd</div>
-                <div class="col text-capitalize">english</div>
-                <a href="#" class="col text-capitalize text-white">help</a>
-                <div class="col"></div>
-                <div class="col"></div>
+        <nav class="py-3 navbar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <p class="col text-uppercase text-white mb-0 pb-0 nav-usd">usd</p>
+                    <p class="col text-capitalize text-white mb-0 pb-0">english</p>
+                    <a href="#" class="col py-50 text-white text-capitalize link-underlined nav-help">help</a>
+                    <a href="#" class="col text-white text-capitalize link-underlined nav-login">login</a>
+                    <a href="#" class="col text-white text-capitalize link-underlined nav-register">register</a>
+                </div>
             </div>
-        </div>
-    </navbar>
+
+            <!-- <div id="modal-login" class="bg-white hidden modal-window">
+                <div class="container">
+                    <i class="fas fa-window-close"></i>
+                    <p class="text-uppercase font-weight-bold">login</p>
+                    <form action="" method="POST">
+                        <input type="text" class="form-control mb-3 rounded-0" id="usr" placeholder="Name/Email*"
+                            name="username" required>
+                        <input type="password" class="form-control mb-3 rounded-0" id="pwd" placeholder="Password*"
+                            name="password" required>
+                        <button type="submit" class="btn btn-dark text-uppercase btn-modal-submit">login</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="modal-register" class="bg-white hidden modal-window">
+                <div class="container">
+                    <i class="fas fa-window-close"></i>
+                    <p class="text-uppercase font-weight-bold">registration</p>
+                    <form action="" method="POST">
+                        <input type="text" class="form-control mb-3 rounded-0" id="usr" placeholder="Name*"
+                            name="username" required>
+                        <input type="email" class="form-control mb-3 rounded-0" id="usr-mail" placeholder="Email*"
+                            name="useremail" required>
+                        <input type="password" class="form-control mb-3 rounded-0" id="pwd" placeholder="Password*"
+                            name="password" required>
+                        <button type="submit" class="btn btn-dark text-uppercase btn-modal-submit">register</button>
+                    </form>
+                </div>
+            </div> -->
+        </nav>
+
+        <!-------------------------------------- HEADER -------------------------------->
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <a href="#" class="mb-0 text-white text-center header-phone-number link-underlined">2300 - 3560 -
+                        222</a>
+                    <img class=" header-logo" src="../app/img/480px/header_logo.png" alt="Bazar-logo">
+                    <a href="#" class="header-cart"><i class="fas fa-shopping-basket"></i>
+                        <div class="header-cart-purchase-number">0</div>
+                    </a>
+                </div>
 
 
-    <header class="header">
-        <div class="container">
+                <div id="modal-cart-full" class="bg-white hidden modal-window">
+                    <div class="container">
+                        <i class="fas fa-window-close"></i>
 
-        </div>
+                        <div class="modal-cart-full-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="img-fluid float-right" src="../app/img/480px/cart-modal.png"
+                                            alt="Purchase">
+                                    </div>
+                                    <div class="col">
+                                        <p class="h4 font-weight-bold purchase-name">Sunbaby Magic Chair</p>
+                                        <p class="text-secondary text-muted mb-1 old-price"><s>$350.00</s></p>
+                                        <p class="bg-dark text-white font-weight-bold h6 modal-cart-full-price-box">
+                                            $250.00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0">
+                                        <p class="modal-cart-quantity-text">Quantity:</p>
+                                        <div class="d-inline border border-dark modal-cart-quantity">2</div>
+                                        <div class="px-2 d-inline border border-dark modal-cart-minus"><i
+                                                class="fas fa-minus"></i></div>
+                                        <div class="px-2 d-inline modal-cart-plus"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-secondary text-muted text-center">Sum</p>
+                                        <p class="font-weight-bold text-center">$250.00</p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <p class="h5 text-right font-weight-bold mt-3" id="modal-cart-total-sum">Total: $1000</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
     </header>
+
+    <!----------------------------------- TOP MENU ------------------------------------------->
+
     <div class="top-menu">
         <div class="container">
 
@@ -71,7 +156,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</div>
+    </div>
 </body>
 
 </html>
