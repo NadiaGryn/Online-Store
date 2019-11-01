@@ -1,9 +1,213 @@
 .basic-page {
-    max-width: 480px;
+    /* max-width: 480px; */
+    /* font-family: 'Open sans'; */
+    font-family: "Poppins";
 }
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* .hidden {
+    display: none;
+} */
+
+.link-underlined {
+    cursor: pointer;
+}
+
+.link-underlined:hover {
+    text-decoration: underline;
+}
+
+input::placeholder {
+    font-size: 14px;
+    color: #c2c2c2;
+}
+
+
+
+/*--------------------------------NAVBAR --------------------------------------------------*/
+.navbar {
+    font-size: 12px;
+    border-top: 4px solid #c2c2c2;
+    background-color: #434343;
+    position: relative;
+}
+
+.nav-help {
+    margin-right: 65px;
+}
+
+#nav-link-login::before {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-size: 11px;
+    margin-right: 8px;
+}
+
+#nav-link-register::before {
+    content: "\f023";
+    font-family: FontAwesome;
+    font-size: 11px;
+    margin-right: 8px;
+}
+.modal-window {
+    padding: 30px 15px 20px 15px;
+    position: absolute;
+}
+#modal-login, #modal-register {
+    top: 50px;
+    right: 0px;
+    z-index: 2;
+}
+
+.fa-window-close {
+    font-size: 28px;
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+
+.btn-modal-submit {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px 38px;
+}
+
+/* ----------------HEADER------------------- */
+
+.header {
+    padding: 50px 25px;
+    background-color: #363636;
+}
+
+.header-logo {
+    margin-left: 45px;
+}
+
+.header-cart {
+    background-color: #d58e32;
+    color: white;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 47px;
+    position: relative;
+}
+.header-cart-purchase-number {
+    background-color: #363636;
+    width: 25px;
+    height: 26px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: -17px;
+    top: 14px;
+}
+
+#modal-cart-full .container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#modal-cart-full{
+    top: 207px;
+}
+
+.modal-cart-full-center {
+    padding: 15px;
+    border: 1px solid #dbdbdb;    
+}
+
+.modal-cart-full-price-box {
+    display: inline;
+    padding: 5px 10px;
+}
+
+.modal-cart-quantity-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.modal-cart-quantity {
+    font-size: 11px;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+
+.modal-cart-minus{
+    font-size: 11px;
+    padding: 5px 15px;
+}
+
+.modal-cart-plus {
+    border: 1px solid #d58e32;
+    color: #d58e32;
+    font-size: 11px;
+    padding: 5px 15px;
+}
+.purchase-name {
+    line-height: 1.6;
+}
+.btn-modal-continue {
+    font-size: 12px;
+    padding: 5px 30px;
+}
+
+.fa-angle-right {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.btn-buy-now {
+    background-color: #d58e32;
+    font-size: 12px;
+    padding: 5px 20px;
+    margin-left: 94px;
+}
+.fa-angle-right {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.btn-buy-now>.fa-shopping-basket {
+    font-size: 18px;
+    margin-right: 5px;
+}
+#modal-cart-empty {
+    top: 206px;
+    right: 0;
+}
+
+#top-menu-search {
+    position: relative;    
+}
+
+.top-menu {
+    box-shadow: 0 1px 10px 0 rgba(32, 33, 36, .28);
+}
+
+.fa-search {
+    position: absolute;
+    top: 13px;
+    right: 23px;
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.fa-bars {
+    font-size: 25px;
+    margin-left: 145px;
+    margin-bottom: 20px;
+}
+
+
 
 .col-md-6 col-lg-4 office-chair {
     background-color: #e8edf7;
     margin: 50px, 0, 50px, 0;
 }
+
 
