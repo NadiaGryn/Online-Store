@@ -24,7 +24,7 @@ const imgFiles = [
 const paths = {
     html: {
         
-        src: './app/templates/*.html',
+        src: './app/templates/index..html',
         build: './dist/'
     },
     styles: {
@@ -103,12 +103,13 @@ function forSass() {
 function watch() {
 	browserSync.init({											// инструмент для live reload
 		server: {
-			baseDir: "./"
+			baseDir: "./dist"
 		}
 	});
 
 	gulp.watch('./app/**/*.scss', forSass);				// ставим watcher для слежения за изменениями в файлах
-	gulp.watch('./app/**/*.js', scripts);
+    gulp.watch('./app/**/*.js', scripts);
+    gulp.watch('./app/**/*.html', html);
 }
 
 gulp.task('cleandev', cleandev);
