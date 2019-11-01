@@ -43,7 +43,7 @@ const paths = {
 
 
 function cleandev() {										//модуль отчистки папки перед каждой расспаковкой
-    return gulp.src('./dist', {read: false})
+    return gulp.src('./dist/*', {read: false})
         .pipe(clean());
 };
 
@@ -65,7 +65,7 @@ function js () {											//Copy fonts to dir "dev"
 
 function scripts () {
     
-    return gulp.src('./app/js/**/*.js')
+    return gulp.src(paths.scripts.src)
         .pipe(terser({											//terser
 			toplevel: true
 		}))														//minify js
@@ -73,14 +73,14 @@ function scripts () {
 		.pipe(rename(function (path) {							// function of rename extname for .css
             path.extname = ".min.js";
         }))
-        .pipe(gulp.dest('./dist/js'))
+        .pipe(gulp.dest(paths.scripts.build))
 		.pipe(browserSync.stream());
 }
 
 function html() {
-    return gulp.src("./app/templates/index.html")
+    return gulp.src(paths.html.src)
         .pipe(rigger())
-        .pipe(gulp.dest('./dist/'))
+        .pipe(gulp.dest(paths.html.build))
         .pipe(browserSync.stream());
 }
 
@@ -120,5 +120,5 @@ gulp.task('html', html);
 gulp.task('watch', watch);
 gulp.task('fonts', fonts);
 gulp.task('js', js);
-gulp.task('build', gulp.series('cleandev', gulp.parallel(img, fonts, scripts, html, forSass)));
+gulp.task('build', gulp.series('cleandev', gulp.parallel( fonts, scripts, html, forSass)));
 gulp.task('dev', gulp.series('build', watch));
