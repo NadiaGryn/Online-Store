@@ -7,3 +7,4 @@ stylesheet.txt
 node_modules/
 .package-lock.json
 dist/
+modal-login.html

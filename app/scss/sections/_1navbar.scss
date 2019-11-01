@@ -1,0 +1,25 @@
+.navbar {
+    font-size: 12px;
+    border-top: 4px solid #c2c2c2;
+    background-color: #434343;
+    position: relative;
+}
+
+.nav-help {
+    margin-right: 65px;
+}
+
+#nav-link-login::before {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-size: 11px;
+    margin-right: 8px;
+}
+
+#nav-link-register::before {
+    content: "\f023";
+    font-family: FontAwesome;
+    font-size: 11px;
+    margin-right: 8px;
+}
+

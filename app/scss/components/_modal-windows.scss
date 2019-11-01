@@ -14,3 +14,57 @@
     top: -1px;
     right: 0;
 }
+
+
+#modal-cart-full .container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#modal-cart-full{
+    top: 207px;
+}
+
+.modal-cart-full-center {
+    padding: 15px;
+    border: 1px solid #dbdbdb;    
+}
+
+.modal-cart-full-price-box {
+    display: inline;
+    padding: 5px 10px;
+}
+
+.modal-cart-quantity-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.modal-cart-quantity {
+    font-size: 11px;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+
+.modal-cart-minus{
+    font-size: 11px;
+    padding: 5px 15px;
+}
+
+.modal-cart-plus {
+    border: 1px solid #d58e32;
+    color: #d58e32;
+    font-size: 11px;
+    padding: 5px 15px;
+}
+.purchase-name {
+    line-height: 1.6;
+}
+
+
+
+
+#modal-cart-empty {
+    top: 206px;
+    right: 0;
+}
