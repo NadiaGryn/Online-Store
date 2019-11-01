@@ -46,7 +46,7 @@ input::placeholder {
     margin-right: 8px;
 }
 
-.nav-register::before {
+#nav-link-register::before {
     content: "\f023";
     font-family: FontAwesome;
     font-size: 11px;
