@@ -1,124 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/02573533c7.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css">
-
-
-    <title>Step-Project__Online-shop</title>
-</head>
-
-<style>
-    .furniture-gallery-title {
-        color: #d58e32;
-        border-bottom: 2px solid #e2e2e2;
-        padding-bottom: 7px;
-    }
-
-    .furniture-gallery-tabs {
-        font-size: 13px;
-        font-weight: bold;
-    }
-
-    .furniture-gallery-tabs-title {
-        border: 1px solid #eaeaea;
-    }
-
-    .furniture-gallery-tabs-title:hover {
-        border-top: 1px solid #d58e32;
-        color: #d58e32;
-        background-color: #f4f5f7;
-        transition: 0.5s;
-    }
-
-    .furniture-gallery-img-center {
-        background-color: #f4f5f7;
-        position: relative;
-        padding-bottom: 94px;
-        margin-top: -17px;
-    }
-
-    .furniture-gallery-overlay {
-        background-color: transparent;
-        position: absolute;
-        top: 175px;
-        margin-left: 10px;
-    }
-
-    .furniture-gallery-overlay-icon {
-        width: 37px;
-        height: 37px;
-        border: 1px solid #2a2a2a;
-        text-align: center;
-        padding-top: 5px;
-        margin-bottom: 6px;
-    }
-
-    .furniture-gallery-overlay-icon:hover {
-        color: #d58e32;
-        transition: 0.3s;
-        border-color: #d58e32;
-    }
-
-    .priсe-cikle {
-        width: 105px;
-        height: 105px;
-        background-color: rgba(123, 123, 124, 0.9);
-        border-radius: 50%;
-        position: absolute;
-        left: 21px;
-        bottom: -100px;
-        line-height: 0.7;
-        padding-top: 32px;
-        z-index: 5;
-    }
-
-    .raiting-contetnt {
-        width: 249px;
-        height: 106px;
-        position: absolute;
-        left: 98px;
-        top: 169px;
-        z-index: 3
-    }
-
-    .raiting-contetnt::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        bottom: 0px;
-        border: 15px solid transparent;
-        border-right: 15px solid black;
-        border-bottom: 15px solid black;
-    }
-
-    .raiting-contetnt::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0px;
-        border: 15px solid transparent;
-        border-left: 15px solid black;
-        border-top: 15px solid black;
-    }
-
-    .raiting-contetnt-title {
-        font-size: 15px;
-        font-weight: bold;
-    }
-</style>
-
-<body>
-    <div class="basic-page">
-
-        <section class="mt-5 furniture-gallery">
+<section class="mt-5 furniture-gallery">
             <div class="container">
                 <h5 class="text-uppercase text-left font-weight-bold ml-4 furniture-gallery-title">furniture gallery
                 </h5>
@@ -128,22 +8,35 @@
 
                     <div class="col-12 col-xl-6">
                         <div class="container">
-                            <ul
-                                class="row list-unstyled list-inline text-uppercase text-center ml-2 mt-3 furniture-gallery-tabs">
-                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title active"
-                                    data-filter="ftrd">featured</li>
-                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title"
-                                    data-filter=".top-sell">top seller</li>
-                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title"
-                                    data-filter=".sale-off">sale off</li>
-                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title"
-                                    data-filter=".rated">top rated</li>
+                            <ul class="row list-unstyled list-inline text-uppercase text-center ml-2 mt-3 furniture-gallery-tabs">
+                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title active" filter="ftrd">featured</li>
+                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title" filter=".top-sell">top seller</li>
+                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title" filter=".sale-off">sale off</li>
+                                <li class="col-3 px-0 mx-0 py-2 list-inline-item furniture-gallery-tabs-title" filter=".rated">top rated</li>
                             </ul>
+
+                           
+                                    <div class="col-12 ml-2 border border-muted furniture-gallery-img-center" filter=".top-sell">
+                                            <img class="img-fluid" src="../img/products/top-seller/10.png" alt="furniture-item">
+                                        </div>
+                                        <!-- <div class="col-12 ml-2 border border-muted furniture-gallery-img-center" filter=".sale-off">
+                                                <img class="img-fluid" src="../img/products/top-seller/12.png" alt="furniture-item">
+                                        </div>
+                                        <div class="col-12 ml-2 border border-muted furniture-gallery-img-center" filter=".rated">
+                                                <img class="img-fluid" src="../img/products/top-seller/13.png" alt="furniture-item">
+                                        </div>
+                                        <div class="col-12 ml-2 border border-muted furniture-gallery-img-center" filter="ftrd">
+                                                    <img class="img-fluid" src="../img/products/top-seller/14.png" alt="furniture-item">
+                                        </div> -->
+
+                           
+
+                            
                             
 
-                            <div class="col-12 ml-2 border border-muted furniture-gallery-img-center">
-                                <img class="img-fluid" src="../img/products/top-seller/10.png" alt="furniture-item">
-                            </div>
+
+
+
 
                             <div class="col-12 pb-5 furniture-gallery-overlay">
                                 <div class="furniture-gallery-overlay-icon" data-toggle="tooltip" data-placement="right"
@@ -166,32 +59,76 @@
                                         <i class="far fa-star"></i>
                                     </div>
                                 </div>
-
-
-
                             </div>
+                        </div>
+                        <!------------------------------------------------------------------------- Slider ----------------------------------------------->
 
+                        <div class="container mt-2">
+                            <div id="carouselGalleryControl" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/10.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/11.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/12.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/13.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/14.png" alt=""></div>
+                                        </div>
+                                    </div>
 
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/15.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/16.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/17.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/18.png" alt=""></div>
+                                            <div class="col-2 gallery-slider"><img class="img-fluid d-block img-carousel-inner"
+                                                    src="../img/products/top-seller/19.png" alt=""></div>
+                                        </div>
+                                    </div>
 
+                                    <div class="container">
+                                            <a class="carousel-control-prev" href="#carouselGalleryControl"
+                                            role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+    
+                                        <a class="carousel-control-next" href="#carouselGalleryControl"
+                                            role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+
+                                    </div>
+
+                                  
+                                </div>
+                            </div>
                         </div>
 
-
-
-
-
-
-
+                        <!--------------------------------------- Hidden div --------------------------------------------------------------------->
+                        <div class="col-12 col-xl-6 d-xs-none d-sm-none d-md-none"></div>
                     </div>
-
-
-
-
-
-
-                    <div class="col-12 col-xl-6 d-xs-none d-sm-none d-md-none"></div>
                 </div>
-            </div>
         </section>
+
+    <script>
+        $(document).ready(function(){
+            $('.furniture-gallery-tabs-title[filter="ftrd"]').click(function(){
+                $('.filter>div').hide(300);
+            });
+        });
+    </script>
 
 
 
@@ -203,20 +140,3 @@
                 $('[data-toggle="tooltip"]').tooltip();
             });
         </script>
-
-
-
-    </div>
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>

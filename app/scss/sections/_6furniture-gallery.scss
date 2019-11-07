@@ -1,0 +1,114 @@
+.furniture-gallery-title {
+    color: #d58e32;
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 7px;
+}
+
+.furniture-gallery-tabs {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.furniture-gallery-tabs-title {
+    border: 1px solid #eaeaea;
+}
+
+.furniture-gallery-tabs-title:hover {
+    border-top: 1px solid #d58e32;
+    color: #d58e32;
+    background-color: #f4f5f7;
+    transition: 0.5s;
+}
+
+.furniture-gallery-img-center {
+    background-color: #f4f5f7;
+    position: relative;
+    padding-bottom: 76px;
+    margin-top: -17px;
+}
+
+.furniture-gallery-overlay {
+    background-color: transparent;
+    position: absolute;
+    top: 175px;
+    margin-left: 10px;
+}
+
+.furniture-gallery-overlay-icon {
+    width: 37px;
+    height: 37px;
+    border: 1px solid #2a2a2a;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 6px;
+}
+
+.furniture-gallery-overlay-icon:hover {
+    color: #d58e32;
+    transition: 0.3s;
+    border-color: #d58e32;
+}
+
+.priсe-cikle {
+    width: 105px;
+    height: 105px;
+    background-color: rgba(123, 123, 124, 0.9);
+    border-radius: 50%;
+    position: absolute;
+    left: 21px;
+    bottom: -90px;
+    line-height: 0.7;
+    padding-top: 32px;
+    z-index: 5;
+}
+
+.raiting-contetnt {
+    width: 249px;
+    height: 106px;
+    position: absolute;
+    left: 98px;
+    top: 155px;
+    z-index: 3
+}
+
+.raiting-contetnt::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    border: 15px solid transparent;
+    border-right: 15px solid black;
+    border-bottom: 15px solid black;
+}
+
+.raiting-contetnt::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    border: 15px solid transparent;
+    border-left: 15px solid black;
+    border-top: 15px solid black;
+}
+
+.raiting-contetnt-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.img-carousel-inner {
+    width: 65px;
+    height: 65px;
+    
+}
+.gallery-slider {
+ margin: 5px;
+ background-color: #f4f5f7;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: black;
+    opacity: 1;
+    width: 33px;
+}

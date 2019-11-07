@@ -110,6 +110,9 @@ function watch() {
 	gulp.watch('./app/scss/**/*.scss', forSass);				// ставим watcher для слежения за изменениями в файлах
     gulp.watch('./app/js/**/*.js', scripts);
     gulp.watch('./app/templates/*.html', html);
+    gulp.watch('./app/img/*', img);
+
+
 }
 
 gulp.task('cleandev', cleandev);
@@ -120,5 +123,5 @@ gulp.task('html', html);
 gulp.task('watch', watch);
 gulp.task('fonts', fonts);
 gulp.task('js', js);
-gulp.task('build', gulp.series('cleandev', gulp.parallel( fonts, scripts, html, forSass)));
+gulp.task('build', gulp.series('cleandev', gulp.parallel( fonts, scripts, html, img, forSass)));
 gulp.task('dev', gulp.series('build', watch));
