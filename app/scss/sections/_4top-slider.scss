@@ -1,0 +1,43 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 302px;
+}
+
+.carousel-caption-text {
+    font-size: 17px;
+}
+
+.carousel-caption {
+    background-color: rgba(49, 49, 49, 0.5);
+    background-blend-mode: lighten;
+    width: 90%;
+    bottom: 34px;
+    left: 5%;
+    padding-bottom: 64px;
+}
+
+.btn-buy-now-white {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 216px;
+    position: unset;
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    background-color: #2a2a2a;
+}
+
+.carousel-control-next {
+    background-color: $txt-clr-orange;
+}

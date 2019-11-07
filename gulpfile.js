@@ -120,5 +120,5 @@ gulp.task('html', html);
 gulp.task('watch', watch);
 gulp.task('fonts', fonts);
 gulp.task('js', js);
-gulp.task('build', gulp.series('cleandev', gulp.parallel( fonts, scripts, html, forSass)));
+gulp.task('build', gulp.series('cleandev', gulp.parallel( fonts, scripts, html, img, forSass)));
 gulp.task('dev', gulp.series('build', watch));
