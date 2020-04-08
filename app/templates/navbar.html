@@ -4,39 +4,59 @@
       <p class="col text-uppercase text-white mb-0 pb-0 nav-usd">usd</p>
       <p class="col text-capitalize text-white mb-0 pb-0">english</p>
       <a href="#" class="col py-50 text-white text-capitalize link-underlined nav-help">help</a>
-      <a href="#" class="col text-white text-capitalize link-underlined" id="nav-link-login">login</a>
-      <a href="#" class="col text-white text-capitalize link-underlined" id="nav-link-register">register</a>
+      <a href="#" class="col text-white text-capitalize link-underlined" data-toggle="modal" data-target="#modalLogin">login</a>
+      <a href="#" class="col text-white text-capitalize link-underlined" data-toggle="modal" data-target="#modalRegister">register</a>
     </div>
   </div>
 
-  <div id="modal-login" class="bg-white hidden modal-window">
-    <div class="container">
-      <i class="fas fa-window-close"></i>
-      <p class="text-uppercase font-weight-bold">login</p>
-      <form action="" method="POST">
-        <input type="text" class="form-control mb-3 rounded-0" id="usr" placeholder="Name/Email*" name="username"
-          required>
-        <input type="password" class="form-control mb-3 rounded-0" id="pwd" placeholder="Password*" name="password"
-          required>
-        <button type="submit" class="btn btn-dark text-uppercase btn-modal-submit">login</button>
-      </form>
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="h5 text-uppercase text-left font-weight-bold modal-title" id="modalLogin-title">login</h5> 
+          <button class="close" type="button" data-dismiss="modal" aria-label="close">
+            <span class="winow-close" aria-hidden="true"><i class="fas fa-window-close"></i></span>
+          </button>          
+        </div>
+        
+        <div class="modal-body">
+            <form action="" method="POST">
+                <input type="text" class="form-control mb-3 rounded-0" id="usr" placeholder="Name/Email*" name="username"
+                  required>
+                <input type="password" class="form-control mb-3 rounded-0" id="pwd" placeholder="Password*" name="password"
+                  required>
+                <button type="submit" class="btn btn-dark text-uppercase btn-modal-submit">login</button>
+              </form>
+        </div>
+      </div>
     </div>
   </div>
 
+  <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="modalRegister" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <h5 class="h5 text-uppercase text-left font-weight-bold modal-title" id="modalRegister-title">register</h5> 
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true"><i class="fas fa-window-close"></i></span>
+            </button>          
+          </div>
+          
+          <div class="modal-body">
+              <form action="" method="POST">
+                  <input type="text" class="form-control mb-3 rounded-0" id="usr" placeholder="Name*"
+                      name="username" required>
+                  <input type="email" class="form-control mb-3 rounded-0" id="usr-mail" placeholder="Email*"
+                      name="useremail" required>
+                  <input type="password" class="form-control mb-3 rounded-0" id="pwd" placeholder="Password*"
+                      name="password" required>
+                  <button type="submit" class="btn btn-dark text-uppercase btn-modal-submit">register</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div id="modal-register" class="bg-white hidden modal-window">
-                <div class="container">
-                    <i class="fas fa-window-close"></i>
-                    <p class="text-uppercase font-weight-bold">registration</p>
-                    <form action="" method="POST">
-                        <input type="text" class="form-control mb-3 rounded-0" id="usr" placeholder="Name*"
-                            name="username" required>
-                        <input type="email" class="form-control mb-3 rounded-0" id="usr-mail" placeholder="Email*"
-                            name="useremail" required>
-                        <input type="password" class="form-control mb-3 rounded-0" id="pwd" placeholder="Password*"
-                            name="password" required>
-                        <button type="submit" class="btn btn-dark text-uppercase btn-modal-submit">register</button>
-                    </form>
-                </div>
-            </div>
 </nav>
